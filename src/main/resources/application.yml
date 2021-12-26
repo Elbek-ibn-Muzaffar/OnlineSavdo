@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+#    url: jdbc:postgresql://ec2-34-204-127-36.compute-1.amazonaws.com:5432/d406i75uhhku30
+#    username: kecofzgztplnxv
+#    password: 36995d0d8898ee9019bacae795ac7c07ebb25f738e07d5fead9a27009b945d38
+      url: jdbc:postgresql://localhost:5432/online_savdo
+      username: juniper
+      password: 112233
+  sql:
+    init:
+      mode: never
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL92Dialect
+    hibernate:
+      ddl-auto: update
+upload:
+  folder: /media/elbek/Новый том/web project/Savdo
